@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="absharrafique.com.filestorage.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your UserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="27dp"
+        android:onClick="saveInternalCache"
+        android:text="Internal Cache" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn1"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_below="@+id/btn1"
+        android:layout_marginTop="13dp"
+        android:onClick="saveExternalCache"
+        android:text="External Cache" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn2"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_below="@+id/btn2"
+        android:layout_marginTop="19dp"
+        android:onClick="saveExternalPrivate"
+        android:text="External Private" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn3"
+        android:layout_alignRight="@+id/btn3"
+        android:layout_below="@+id/btn3"
+        android:layout_marginTop="32dp"
+        android:onClick="saveExternalPublic"
+        android:text="External Public" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText1"
+        android:layout_alignLeft="@+id/btn4"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_alignStart="@+id/btn4"
+        android:layout_below="@+id/btn4"
+        android:layout_marginTop="25dp"
+        android:onClick="next"
+        android:text="Next" />
+
+</RelativeLayout>
