@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Look this file i'm linking.
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.editText1);
     }
