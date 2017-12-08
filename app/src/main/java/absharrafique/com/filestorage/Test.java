@@ -5,5 +5,5 @@ package absharrafique.com.filestorage;
  */
 
 public class Test {
-    public String sms;
+    public String file;
 }
